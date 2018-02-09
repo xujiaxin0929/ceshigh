@@ -1,0 +1,37 @@
+@import "reset";
+@import "config";
+header {
+    width: 100%;
+    height: rem(20);
+    background: pink;
+}
+
+.img {
+    width: rem(20);
+    height: rem(20);
+    position: absolute;
+    top: 0;
+    font-size: rem(40);
+    color: #333333;
+    left: 50%;
+    -webkit-animation: gogogo 2s infinite linear;
+    -webkit-animation: gogogo 2s infinite linear;
+}
+
+@-webkit-keyframes gogogo {
+    0% {
+        -webkit-transform: rotate(0deg);
+        top: 0;
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        top: 50%;
+        opacity: .8;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        top: 100%;
+        opacity: 0;
+    }
+}
